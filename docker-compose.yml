@@ -2,7 +2,7 @@ version: "3.5"
 
 services:
   ce0:
-    image: westonwoolworth/conanexiles
+    image: westonwoolworth/conanexiles2
     depends_on:
       - redis
     restart: unless-stopped
