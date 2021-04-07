@@ -2,7 +2,7 @@ version: "3.5"
 
 services:
   ce0:
-    image: westonwoolworth/conanexiles2
+    image: westonwoolworth/conanexiles:latest
     depends_on:
       - redis
     restart: unless-stopped
@@ -230,7 +230,7 @@ services:
         - data:/conanexiles
 
   ce1:
-    image: westonwoolworth/conanexiles
+    image: westonwoolworth/conanexiles:latest
     depends_on:
       - redis
     restart: unless-stopped
