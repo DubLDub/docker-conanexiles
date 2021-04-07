@@ -244,9 +244,8 @@ services:
       - "CONANEXILES_Game_RconPlugin_RconPassword=REDACTED"
       - "CONANEXILES_Game_RconPlugin_RconPort=25575"
       - "CONANEXILES_Game_RconPlugin_RconMaxKarma=60"
-      - "CONANEXILES_Game_ServerDefaultMap=/Game/DLC_EXT/DLC_Siptah/Maps/DLC_Isle_of_Siptah
-      # Very Good Defaults
-      - "CONANEXILES_Engine_/script/onlinesubsystemutils.ipnetdriver_NetServerMaxTickRate=30" #INSERT A VALUE OF 30 OR HIGHER
+      - "CONANEXILES_Game_ServerDefaultMap=/Game/DLC_EXT/DLC_Siptah/Maps/DLC_Isle_of_Siptah"
+      - "CONANEXILES_Engine_/script/onlinesubsystemutils.ipnetdriver_NetServerMaxTickRate=30"
       - "CONANEXILES_Engine_/script/onlinesubsystemutils.ipnetdriver_MaxClientRate=600000"
       - "CONANEXILES_Engine_/script/onlinesubsystemutils.ipnetdriver_MaxInternetClientRate=600000"
       - "CONANEXILES_Engine_SystemSettings_dw.NetClientFloatsDuringNavWalking=0"
