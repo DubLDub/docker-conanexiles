@@ -12,7 +12,8 @@ ENV TIMEZONE=Europe/Vienna \
     CONANEXILES_Engine_Core.Log_LogStreaming=Warning \
     CONANEXILES_Engine_Core.Log_LogModController=Warning \
     CONANEXILES_Engine_Core.Log_LoglevelActorContainer=Warning \
-    CONANEXILES_Game_/Script/ConanSandbox.ConanGameMode_PeriodicBackupInterval=900
+    CONANEXILES_Game_/Script/ConanSandbox.ConanGameMode_PeriodicBackupInterval=900 \
+    CONANEXILES_SERVER_TYPE=pve
 
 RUN apt-get update \
     && apt-get install -y crudini python3-pip redis-tools software-properties-common supervisor unzip curl xvfb wget rsync net-tools \
