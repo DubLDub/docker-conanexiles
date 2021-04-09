@@ -20,7 +20,6 @@ services:
 # also for ssl/tls:
 #      ADDED_FLAGS: "--tls=2"
     restart: always
-    volumes:
 
   ce0:
     image: westonwoolworth/conanexiles:latest
