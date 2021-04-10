@@ -489,3 +489,4 @@ services:
 volumes:
     data:
     redis:
+    my-db-volume:
