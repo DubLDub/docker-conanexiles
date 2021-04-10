@@ -9,7 +9,7 @@ services:
       - "21:21"
       - "30000-30009:30000-30009"
     volumes: # remember to replace /folder_on_disk/ with the path to where you want to store the files on the host machine
-      - data:/home/username/conan
+      - data:/home/username
       - my-db-volume:/etc/pure-ftpd/passwd
 # uncomment for ssl/tls, see https://github.com/stilliard/docker-pure-ftpd#tls
 #      - "/folder_on_disk/ssl:/etc/ssl/private/"
@@ -18,6 +18,8 @@ services:
       FTP_USER_NAME: username
       FTP_USER_PASS: mypass123
       FTP_USER_HOME: /home/username
+      FTP_USER_UID: 1000
+      FTP_USER_GID: 1000
 # also for ssl/tls:
 #      ADDED_FLAGS: "--tls=2"
     restart: always
