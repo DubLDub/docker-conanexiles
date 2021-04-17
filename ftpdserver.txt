@@ -1,0 +1,20 @@
+
+  ftpd_server:
+    image: stilliard/pure-ftpd
+    container_name: pure-ftpd
+    ports:
+      - "21:21"
+      - "30000-30009:30000-30009"
+    volumes: # remember to replace /folder_on_disk/ with the path to where you want to store the files on the host machine
+      - data:/home
+# uncomment for ssl/tls, see https://github.com/stilliard/docker-pure-ftpd#tls
+#      - "/folder_on_disk/ssl:/etc/ssl/private/"
+    environment:
+      PUBLICHOST: "localhost"
+      FTP_USER_NAME: conan3
+      FTP_USER_PASS: mypass123
+      FTP_USER_HOME: /home/conan3
+      FTP_USER_UID: 1024
+# also for ssl/tls:
+#      ADDED_FLAGS: "--tls=2"
+    restart: always

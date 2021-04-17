@@ -34,7 +34,7 @@ While configuring my server and trying to fix some shortcomings i stumbled over 
 ### Get started
 
 ```sh
-curl -LJO https://raw.githubusercontent.com/alinmear/docker-conanexiles/master/docker-compose.yml
+curl -LJO https://raw.githubusercontent.com/dubldub/docker-conanexiles/master/docker-compose.yml
 docker-compose pull
 ```
 
